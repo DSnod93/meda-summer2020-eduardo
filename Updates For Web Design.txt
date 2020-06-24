@@ -1,3 +1,0 @@
-Add up arrow tip for terminal to access previous commands typed. -> Bash Guide
-Add pull to Git Guide
-
