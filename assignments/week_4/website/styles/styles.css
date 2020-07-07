@@ -100,3 +100,10 @@ h2 {
 #footer {
 
 }
+
+body#contact-page form#contact-form {
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+}
+
