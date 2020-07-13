@@ -1,16 +1,16 @@
 /* To change the background of the entire website, select body and use property background-color. */
 body {
-    background-color: #D9D3D0; /* dark blue */
-    color: #403630;
+    background-color: #42B9D6; /* dark blue */
+    color: #014657;
 }
 
 a {
-    color: #8D8079;
-    text-decoration: none;
+    color: #014657;
+    /* text-decoration: none; */
 }
 
 h2 {
-    color: #2A403F;
+    color: #016F8A;
 }
 
 #container {
@@ -28,7 +28,7 @@ h2 {
     margin-bottom: 0;
     padding-top: 40px;
     padding-bottom: 40px;
-    color: #2A403F;
+    color: snow;
 }
 
 #header ul {
@@ -41,7 +41,7 @@ h2 {
 }
 
 #header ul li {
-    background-color: #8D8079;
+    background-color: #31889D;
     display: inline-block;
     margin-left: 25px;
     margin-right: 25px;
@@ -91,13 +91,13 @@ h2 {
     margin-right: 30px;
     margin-left: 30px;
     line-height: 22px;
-    color: #403630;
+    color: #014657;
 }
 
 #main img {
     border-style: solid;
     border-width: 2px;
-    border-color: #798C8C;
+    border-color: #42B9D6;
     border-radius: 85px;
 }
 
