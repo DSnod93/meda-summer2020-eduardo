@@ -95,10 +95,9 @@ h2 {
 }
 
 #main img {
-    border-style: solid;
-    border-width: 2px;
+
     border-color: #798C8C;
-    border-radius: 85px;
+    border-radius: 4px;
 }
 
 
