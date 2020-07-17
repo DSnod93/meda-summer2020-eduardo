@@ -1,26 +1,17 @@
-var myVariable = 100;
+// The If Statement
 
-// Cannot multiply Strings.
+var number1 = 10;
+var number2 = 10;
 
-var mySentence = "hundred";
-
-var total = 10 * mySentence;
-// total will hold a NaN value (which stands for Not A Numbers)
+// Syntax
 
 
-var userPurchaseTotal = 3000;
 
-var purchaseTax = userPurchaseTotal * .085;
 
-var purchaseTotal = userPurchaseTotal + purchaseTax;
+// Logical Operators
+if (number1 == number2) {
+    console.log("This if statement was true so I ran this code!");
+}
 
-// The plus symbol is not doing addition, instead it is concatenating, or combining two Strings. Note that JavaScript will convert the number in purchaseTax to a String, to concatenate.
-var sentenceToWrite = "The user's purchase tax is " + purchaseTax;
 
-var sentenceToWritePurchase = "The user purchased $" + userPurchaseTotal + " worth of stuff!";
-
-var sentenceForTotal ="The user has to pay a total of $" + purchaseTotal;
-
-console.log(sentenceToWritePurchase);
-console.log(sentenceToWrite);
-console.log(sentenceForTotal);
+console.log("Program Finished!");
