@@ -7,12 +7,20 @@ var mySentence = "hundred";
 var total = 10 * mySentence;
 // total will hold a NaN value (which stands for Not A Numbers)
 
-var numberTotal = 10 * 100;
 
-console.log(numberTotal);
+var userPurchaseTotal = 3000;
 
-var biggerNumber = numberTotal + 1000;
+var purchaseTax = userPurchaseTotal * .085;
 
-console.log(numberTotal);
+var purchaseTotal = userPurchaseTotal + purchaseTax;
 
-console.log(biggerNumber);
+// The plus symbol is not doing addition, instead it is concatenating, or combining two Strings. Note that JavaScript will convert the number in purchaseTax to a String, to concatenate.
+var sentenceToWrite = "The user's purchase tax is " + purchaseTax;
+
+var sentenceToWritePurchase = "The user purchased $" + userPurchaseTotal + " worth of stuff!";
+
+var sentenceForTotal ="The user has to pay a total of $" + purchaseTotal;
+
+console.log(sentenceToWritePurchase);
+console.log(sentenceToWrite);
+console.log(sentenceForTotal);
