@@ -1,7 +1,3 @@
-var hello = "hello there!";
-
-console.log("hello");
-
 var myVariable = 100;
 
 // Cannot multiply Strings.
@@ -15,6 +11,8 @@ var numberTotal = 10 * 100;
 
 console.log(numberTotal);
 
-// true and false
+var biggerNumber = numberTotal + 1000;
 
-var isRaining = true;
+console.log(numberTotal);
+
+console.log(biggerNumber);
