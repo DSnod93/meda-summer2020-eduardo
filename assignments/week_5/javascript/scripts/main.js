@@ -1,8 +1,20 @@
-console.log("Hello World!");
+var hello = "hello there!";
 
-var x = 10;
-var y = 12;
+console.log("hello");
 
-var myNumber = x * y / y + x * x;
+var myVariable = 100;
 
-console.log(myNumber);
+// Cannot multiply Strings.
+
+var mySentence = "hundred";
+
+var total = 10 * mySentence;
+// total will hold a NaN value (which stands for Not A Numbers)
+
+var numberTotal = 10 * 100;
+
+console.log(numberTotal);
+
+// true and false
+
+var isRaining = true;
