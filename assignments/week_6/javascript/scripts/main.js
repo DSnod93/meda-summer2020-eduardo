@@ -1,104 +1,43 @@
-// Math Operators;
-// +, -, *, /, %
-// String Operator
-// + (concatenation)
-
-
 /*
-Everything
-in here
-is a comment.
-*/
 
-// Conditional Operators
-// All conditional operations tend to end up being a boolean.
-
-/* 
-
-INDEPENDENT OF DATA TYPES
-== equal to
-<  lesser than
->  greater than
-!= not equal to
-!  reverses a boolean !true == false    !false == true
-
-<= lesser than or equal
->= greater than or equal, do not reverse characters as => is arrow function
-
-DEPENDENT OF DATA TYPES
-=== both are equal AND are the same data type
-!==
-
+*
+**
+*** 
+****
+*****
+****
+***
+**
+*
 
 */
 
-var data1 = 10;
-var data2 = "10";
-// var data2 = parseInt("10"); // parseFloat() to include periods as decimals.
+// Creating "Random" Numbers using JavaScript.
+Math.random(); // Creates a random number between 0 and 1;
+Math.ceil(); // Takes in a number and rounds it up.
+Math.floor(); // Takes in a number and rounds it down.
+Math.round(); // Takes in a number and rounds based on decimal value.
 
-console.log();
-parseInt();
+var randomNumberWithDecimal = (Math.random() * 10) + 1;
+var myRandomNumber =  Math.floor(randomNumberWithDecimal);
 
-// Type Coercion
+console.log(myRandomNumber);
 
-if (data1 === data2) {
-    console.log("The condition was true.");
-} else {
+
+
+
+// the double plus operator will take the current value of the variable and add a 1 to it and also replace the old value of the variable.
+// myVariable++;
+// myVariable = myVariable + 1; Does the same thing as previous line.
+
+var asteriskString = "*";
+var pyramidSpeed = "****";
+var pyramidHeight = 6;
+
+
+for (var counter = 0; counter < pyramidHeight; counter++) {
+    
+    console.log(asteriskString);
+    asteriskString = asteriskString + pyramidSpeed;
 
 }
-
-
-
-
-// Ternary Operator.
-// condition ? true code : false code;
-
-var isItTrue = false ? "h" : "g";
-
-var isItTrue2;
-if (false) {
-    isItTrue2 = "h";
-} else {
-    isItTrue2 = "g";
-}
-
-console.log(isItTrue);
-// Ternary Operator END
-
-
-
-// Functions
-function sayHelloThreeTimes() {
-    console.log("hello!");
-    console.log("hello!");
-    console.log("hello!");
-}
-
-function sayGoodByeTwoTimes() {
-    console.log("goodbye!");
-    console.log("goodbye!");
-}
-
-function sayHelloNineTimes() {
-    sayHelloThreeTimes();
-    sayHelloThreeTimes();
-    sayHelloThreeTimes();
-}
-
-sayHelloThreeTimes();
-console.log("How are you doing");
-
-
-// function recursiveFunction() {
-//     recursiveFunction();
-// }
-
-sayHelloThreeTimes();
-sayHelloThreeTimes();
-sayGoodByeTwoTimes();
-
-sayHelloNineTimes();
-
-// Functions END
-
-
