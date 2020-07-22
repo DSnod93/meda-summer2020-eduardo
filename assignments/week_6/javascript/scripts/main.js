@@ -1,43 +1,33 @@
-/*
-
-*
-**
-*** 
-****
-*****
-****
-***
-**
-*
-
-*/
-
-// Creating "Random" Numbers using JavaScript.
-Math.random(); // Creates a random number between 0 and 1;
-Math.ceil(); // Takes in a number and rounds it up.
-Math.floor(); // Takes in a number and rounds it down.
-Math.round(); // Takes in a number and rounds based on decimal value.
-
-var randomNumberWithDecimal = (Math.random() * 10) + 1;
-var myRandomNumber =  Math.floor(randomNumberWithDecimal);
-
-console.log(myRandomNumber);
+ // FUNCTIONS
 
 
 
+var mySpecialNumber = "8";
 
-// the double plus operator will take the current value of the variable and add a 1 to it and also replace the old value of the variable.
-// myVariable++;
-// myVariable = myVariable + 1; Does the same thing as previous line.
-
-var asteriskString = "*";
-var pyramidSpeed = "****";
-var pyramidHeight = 6;
+// function myFunction() {
+//     var response = prompt("How are you today?");
+//     var responseModified = response + "I don't care";
+//     console.log("They said: " + responseModified + " and the special number is " + mySpecialNumber); 
+// }
 
 
-for (var counter = 0; counter < pyramidHeight; counter++) {
-    
-    console.log(asteriskString);
-    asteriskString = asteriskString + pyramidSpeed;
+// ANY INFORMATION THAT ENTERS JAVASCRIPT FROM HTML OR CSS WILL THE THE DATATYPE OF STRING, REGARDLESS OF CONTENT.
 
+function myFunction() {
+    var response = prompt("How are you today?");
+
+    if (response === "") {
+        alert("You did not type anything in!");
+        return false;
+    } else {
+        console.log(response);
+        return true;
+    }
+}
+
+
+var didTheyRead = myFunction();
+
+while (didTheyRead === false) {
+    didTheyRead = myFunction();
 }
