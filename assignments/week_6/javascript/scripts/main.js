@@ -1,84 +1,52 @@
-function addNumber() {
-    var number1 = 10;
-    var number2 = 100;
+var oneValue = 800;
 
-    var sum = number1 + number2;
+oneValue = 500;
 
-    return sum;
+// An JavaScript Array is described using the square brackets symbols, and each value within should be split by a comma except for the last value.
+var days = [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+    "sunday"
+];
+
+var randomArray = [100, "hello", true];
+
+var multiDimensionalArray = [
+    [10, 20],
+    [100, 200]
+];
+
+//var newArray = randomArray + days;
+var newArray2 = randomArray.concat(days);
+
+console.log(days[3]);
+console.log(days[600]);
+
+days[2] = "whensday";
+
+console.log(days);
+
+
+function addArrays(array1, array2) {
+
+    var newArray = [
+        array1[0] + array2[0],
+        array1[1] + array2[1]
+    ]
+
+    return newArray;
 }
 
+var firstArray = [1, 10];
+var secondArray = [9, 90];
+var sumArray = addArrays(firstArray, secondArray);
 
-var myNumber = 110;
-var myNumber2 = addNumber();
+console.log(sumArray);
 
-addNumber();
+days[7] = "superday";
 
-
-// Function Arguments and Parameters
-// Parameters are Function variables.
-
-
-function myFunction(myFunctionVariable, mySecondFunctionVariable) {
-
-    console.log(myFunctionVariable);
-
-}
-
-// Arguments are the values for the Parameters. And provided within the paranthesis just like Parameters.
-// myFunction(1000, "hello");
-// myFunction(10);
-// myFunction("hello");
-// myFunction(true);
-
-
-function mathify(num1, num2, hello) {
-
-    var sum = num1 + num2;
-    var difference = num1 - num2;
-    var product = num1 * num2;
-    var quotient = num1 / num2;
-
-    console.log("Sum: " + sum);
-    console.log("Difference: " + difference);
-    console.log("Product: " + product);
-    console.log("Quotient: " + quotient);
-
-    return "done!";
-}
-
-mathify(90, 100);
-mathify(8, 10);
-mathify(1, 70);
-
-
-function caTax(priceTotal) {
-
-    var tax = priceTotal * .085;
-    var totalExpense = priceTotal + tax;
-
-    return totalExpense;
-
-}
-
-
-function writeSentence(priceTotal) {
-
-    console.log("The total for a $" + priceTotal + " purchase is $" + caTax(priceTotal));
-
-}
-
-var myOtherNumber = 100;
-
-writeSentence(myOtherNumber);
-writeSentence(1100);
-writeSentence(13);
-
-
-
-function excited(sentence, result) {
-
-    console.log(sentence + "!!!");
-
-}
-
-excited("hello");
+console.log(days);
