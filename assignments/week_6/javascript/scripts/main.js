@@ -63,16 +63,38 @@ console.log(days);
 
 // PUSH EXAMPLE
 
-var multiples = [];
-var multiplier = 12;
+Math.random();
 
-for (var i = 0; i <= 12; i = i + 1) {
 
-    var product = i * multiplier;
-    multiples.push(product);
-
-}
 
 //multiples.shift(); will get rid of the starting 0;
 
-console.log(multiples);
+
+function multiplesTables(multiplier, max = 12) {
+
+    var multiples = [];
+
+    for (var i = 0; i <= max; i = i + 1) {
+        var product = i * multiplier;
+        multiples.push(product);
+    }
+
+    return multiples;
+}
+
+
+console.log(multiplesTables(7, 20));
+
+console.log(multiplesTables(18, 20));
+
+
+days.pop();
+console.log(days);
+
+// Difference between Null and Undefined.
+// null = intentionally emptying a variable.
+// undefined = was never assigned a value.
+
+days[4] = null;
+
+console.log(days);
