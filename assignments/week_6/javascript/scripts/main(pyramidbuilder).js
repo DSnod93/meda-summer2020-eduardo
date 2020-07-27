@@ -64,9 +64,9 @@ for (var counter = 0; counter < pyramidHeight; counter++) {
 // console.log(updatedString);
 
 
-var exString = "*****";
+var exString = "**********";
 // Repeating the above until we reach the one asterisk.
-for (var i = 0; i < 5; i = i + 1) {
+for (var i = 0; i < 10; i = i + 1) {
     
     var exArray = exString.split("");
     exArray.pop();
