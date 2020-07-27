@@ -31,7 +31,7 @@ console.log(myRandomNumber);
 // myVariable = myVariable + 1; Does the same thing as previous line.
 
 var asteriskString = "*";
-var pyramidSpeed = "*";
+var pyramidSpeed = "**";
 var pyramidHeight = 5;
 
 

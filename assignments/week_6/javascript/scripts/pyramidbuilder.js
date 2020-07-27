@@ -25,10 +25,16 @@ function pyramidBuilder(pyramidHeight, pyramidSpeed) {
 
 }
 
+// pyramidBuilder(9, "***");
+// first argument is how many times to run the second argument for our pyramid.
 
 
-pyramidBuilder(6, "#$#$");
-// pyramidBuilder(10, 2, "^")
-pyramidBuilder(8, "()");
 
-pyramidBuilder(20, "-+-+")
+
+for (var i = 0; i < 100; i++) {
+    var randomNumberWithDecimal = (Math.random() * 8) + 2;
+    var myRandomNumber =  Math.floor(randomNumberWithDecimal);
+
+    pyramidBuilder(myRandomNumber, "[]");
+}
+
