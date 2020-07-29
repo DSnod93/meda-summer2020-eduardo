@@ -2,10 +2,22 @@
 
 $(document).ready(function () {
 
-    var allParagraphs = $("p");
+    var allParagraphs = $("#exampleText");
     var textButton = $("#textButton");
 
     // $("p").css();
+
+    setTimeout(function () {
+
+        $("#modal").css("display", "block");
+
+    }, 5000);
+
+    
+    $("#closePopup").click(function () {
+        $("#modal").css("display", "none");
+    });
+
 
     textButton.click( function () {
 
